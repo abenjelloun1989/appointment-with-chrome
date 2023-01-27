@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Appointment Finder",
+    "version": "1.0",
+    "permissions": [
+        "https://candidat.permisdeconduire.gouv.fr/api/v1/candidat/creneaux",
+        "activeTab",
+        "browser_action"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "icon32.png",
+        "default_title": "Appointment Finder",
+        "default_popup": "popup.html"
+    },      
+    "icons": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "128": "icon128.png"
+    }
+}
